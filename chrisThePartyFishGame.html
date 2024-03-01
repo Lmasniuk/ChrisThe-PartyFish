@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Chris The Party Fish Game</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="game.js"></script>
+	</head>
+	<body onkeypress="handle_key(event)">
+		<div id="fishTank">
+			<img src="imgs/chris.png" id="chrisCrillz" />
+            <img src="imgs/trophy.png" id="theTrophy" />
+            <img src="imgs/bubly.png" id="theBubs" />
+            <img src="imgs/speaker.png" id="theSpeaker" />
+		</div>
+		<table>
+			<tr>
+				<th>&#8593;</th>
+				<th>&#8592;</th>
+				<th>&#8595;</th>
+				<th>&#8594;</th>
+			</tr>
+			<tr>
+				<th>W</th>
+				<th>A</th>
+				<th>S</th>
+				<th>D</th>
+
+			</tr>
+		</table>
+        <audio id = "crillzPlaya"  controls="controls">
+
+            <source src="chrisFish.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+      <script type="text/javascript">
+            var warehouse = document.getElementById('fishTank');
+            for (var y = 0; y < map_height; ++y)
+            {
+                for (var x = 0; x < map_width; ++x)
+                {
+                    var box = document.createElement('div');
+                    box.id = "box_" + x + "_" + y;
+                    box.className = "box";
+                    warehouse.appendChild(box);
+                }
+            }
+            initialize();
+        </script>
+
+	</body>
+</html>

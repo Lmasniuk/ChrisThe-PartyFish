@@ -1,0 +1,24 @@
+body
+{
+    font-family: Arial;
+    font-size: 24px;
+}
+#fishTank
+{
+    width: 800px;
+    height: 560px;
+    position: relative;
+}
+.box
+{
+    background-size: contain;
+}
+.box, #chrisCrillz
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
